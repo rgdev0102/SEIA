@@ -133,3 +133,34 @@ footer {
   color: #555;
   border-top: 1px solid #ddd;
 }
+/* ===== Webgrafía ===== */
+.webgrafia {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 2px solid #0078d7;
+}
+
+.webgrafia h2 {
+  color: #0078d7;
+  margin-bottom: 20px;
+}
+
+.webgrafia-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.webgrafia-info img {
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.webgrafia-info p {
+  flex: 1;
+  font-size: 1em;
+  color: #444;
+}
+
