@@ -29,17 +29,16 @@ header p {
 /* ===== Contenedor principal ===== */
 .contenedor {
   display: flex;
-  min-height: calc(100vh - 150px);
 }
 
-/* ===== Menú lateral fijo ===== */
+/* ===== Menú lateral ===== */
 .menu {
   width: 250px;
   background-color: #f8f8f8;
   border-right: 1px solid #ddd;
   padding: 20px;
   position: fixed;
-  top: 150px;
+  top: 145px;
   left: 0;
   bottom: 0;
   overflow-y: auto;
@@ -47,4 +46,129 @@ header p {
 
 .menu h2 {
   font-size: 1.3em;
-  color: #0078d7
+  color: #0078d7;
+  margin-top: 0;
+}
+
+.menu ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu li {
+  margin: 12px 0;
+}
+
+.menu a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #0078d7;
+}
+
+/* ===== Contenido ===== */
+.contenido {
+  margin-left: 290px;
+  padding: 30px;
+  flex: 1;
+}
+
+.sensor {
+  margin-bottom: 40px;
+}
+
+.sensor h2 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.sensor-info {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.sensor-info img {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.sensor-info p {
+  line-height: 1.6;
+}
+
+/* ===== Botones ===== */
+.boton {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #0078d7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.boton:hover {
+  background-color: #005ea6;
+}
+
+/* ===== Separadores ===== */
+.separador {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* ===== Webgrafía ===== */
+.webgrafia-info {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.webgrafia-info img {
+  width: 250px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* ===== Pie de página ===== */
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+
+  .menu {
+    position: relative;
+    width: auto;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .contenido {
+    margin-left: 0;
+  }
+
+  .sensor-info,
+  .webgrafia-info {
+    flex-direction: column;
+  }
+
+  .sensor-info img,
+  .webgrafia-info img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
