@@ -29,7 +29,7 @@ header p {
 /* ===== Contenedor principal ===== */
 .contenedor {
   display: flex;
-  min-height: calc(100vh - 150px); /* Altura menos la cabecera */
+  min-height: calc(100vh - 0px); /* Altura menos la cabecera 150 */
 }
 
 /* ===== Menú lateral fijo ===== */
@@ -39,7 +39,7 @@ header p {
   border-right: 1px solid #ddd;
   padding: 20px;
   position: fixed;
-  top: 0px; /* debajo del header */
+  top: 150px; /* debajo del header */
   left: 0;
   bottom: 0;
   overflow-y: auto;
