@@ -39,7 +39,7 @@ header p {
   border-right: 1px solid #ddd;
   padding: 20px;
   position: fixed;
-  top: 150px; /* debajo del header */
+  /* top: 150px; /* debajo del header */
   left: 0;
   bottom: 0;
   overflow-y: auto;
