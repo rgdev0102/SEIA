@@ -34,12 +34,12 @@ header p {
 
 /* ===== Menú lateral fijo ===== */
 .menu {
-  width: 250px;
+  width: 50px;
   background-color: #f8f8f8;
   border-right: 1px solid #ddd;
   padding: 20px;
   position: fixed;
-  /* top: 150px; /* debajo del header */
+  top: 1px; /* 150 */
   left: 0;
   bottom: 0;
   overflow-y: auto;
